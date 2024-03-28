@@ -27,7 +27,7 @@ const Hello: React.FC = () => {
                     </ImageContainer>
                 </HeaderContainer>
                 <ProjectContainer >
-                    <h3 onClick={() => window.location.href = "https://www.linkedin.com/in/vinidill/"}>Acesse meus Projetos aqui!</h3>
+                    <h3 onClick={() => window.location.href = "https://github.com/ViniDill"}>Acesse meus Projetos aqui!</h3>
                     <PanToolAltIcon className="toolIcon" style={{ fontSize: 40 }} />
                 </ProjectContainer>
             </ContentContainer>
