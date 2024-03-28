@@ -54,8 +54,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Container>
           <HeaderContainer>
             <IconContainer>
-              <GitHubIcon style={{ fontSize: 40 }} onClick={() => window.location.href = "https://github.com/ViniDill"} />
-              <LinkedInIcon style={{ fontSize: 40 }} onClick={() => window.location.href = "https://www.linkedin.com/in/vinidill/"} />
+              <GitHubIcon className="GitHub" style={{ fontSize: 40 }} onClick={() => window.location.href = "https://github.com/ViniDill"} />
+              <LinkedInIcon className="LinkedIn" style={{ fontSize: 40 }} onClick={() => window.location.href = "https://www.linkedin.com/in/vinidill/"} />
               <IconButton color="inherit" onClick={toggleColorMode}>
                 {mode === 'light' ? <WbSunnyIcon style={{ fontSize: 40 }} /> : <NightsStayIcon style={{ fontSize: 40 }} />}
               </IconButton>
