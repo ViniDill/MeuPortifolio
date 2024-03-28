@@ -12,7 +12,7 @@ export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
 
-    ${media.lessThan("medium")`
+    ${media.lessThan("large")`
             display: none;
         `}
 
@@ -22,11 +22,10 @@ export const ImageContainer = styled.div`
         height: 700px;
         border-radius: 360px;
 
-        ${media.lessThan("large")`
-        width: 350px;
-        height: 350px;
+        ${media.lessThan("huge")`
+        max-width: 500px;
+        max-height: 500px;
         `}
-
     }
 `
 
@@ -37,14 +36,16 @@ export const TextContainer = styled.div`
     h1 {
         font-size: ${FontAndSpacing.fontSize["5xl"]};
 
-        ${media.lessThan("medium")`
+        ${media.lessThan("large")`
             text-align: center;
+        `}
+
+        ${media.lessThan("medium")`
 
             font-size: ${FontAndSpacing.fontSize["3xl"]};
         `}
 
         ${media.lessThan("small")`
-            text-align: center;
 
             font-size: ${FontAndSpacing.fontSize["2xl"]};
         `}
@@ -57,14 +58,16 @@ export const TextContainer = styled.div`
         -webkit-text-fill-color: transparent;
         background-clip: text;
 
-        ${media.lessThan("medium")`
+        ${media.lessThan("large")`
             text-align: center;
+        `}
+
+        ${media.lessThan("medium")`
 
             font-size: ${FontAndSpacing.fontSize["4xl"]};
         `}
 
         ${media.lessThan("small")`
-            text-align: center;
 
             font-size: ${FontAndSpacing.fontSize["2xl"]};
         `}
@@ -77,8 +80,13 @@ export const TextContainer = styled.div`
         align-items: center;
         margin: auto;
 
-        ${media.lessThan("medium")`
+        ${media.lessThan("large")`
             display:flex ;
+            width: 400px;
+            height: 400px;
+        `}
+
+        ${media.lessThan("large")`
             width: 300px;
             height: 300px;
         `}
@@ -90,7 +98,7 @@ export const TextContainer = styled.div`
         font-size: ${FontAndSpacing.fontSize.xl};
 
         ${media.lessThan("medium")`
-            text-align: center;
+            text-align: justify;
 
             font-size: ${FontAndSpacing.fontSize.lg};
         `}
