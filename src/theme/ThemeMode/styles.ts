@@ -25,5 +25,6 @@ export const IconContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 250px;
+    margin-left: 10px;
 
 `
