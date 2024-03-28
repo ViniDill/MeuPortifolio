@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 import FontAndSpacing from "../../theme/FontAndSpacing";
+import media from "styled-media-query";
 
 export const Container = styled.div`
 
-    padding-top: ${FontAndSpacing.spacing["2xl"]};
 `
 
 export const ImageContainer = styled.div`
@@ -12,22 +12,42 @@ export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
 
+    ${media.lessThan("medium")`
+            display: none;
+        `}
+
     .Dev {
 
         width: 700px;
         height: 700px;
         border-radius: 360px;
 
+        ${media.lessThan("large")`
+        width: 350px;
+        height: 350px;
+        `}
+
     }
 `
 
 export const TextContainer = styled.div`
 
-    padding: ${FontAndSpacing.spacing["2xl"]};
     justify-content: center;
 
     h1 {
         font-size: ${FontAndSpacing.fontSize["5xl"]};
+
+        ${media.lessThan("medium")`
+            text-align: center;
+
+            font-size: ${FontAndSpacing.fontSize["3xl"]};
+        `}
+
+        ${media.lessThan("small")`
+            text-align: center;
+
+            font-size: ${FontAndSpacing.fontSize["2xl"]};
+        `}
     }
 
     h2 {
@@ -36,11 +56,44 @@ export const TextContainer = styled.div`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
+        ${media.lessThan("medium")`
+            text-align: center;
+
+            font-size: ${FontAndSpacing.fontSize["4xl"]};
+        `}
+
+        ${media.lessThan("small")`
+            text-align: center;
+
+            font-size: ${FontAndSpacing.fontSize["2xl"]};
+        `}
     }
+
+    .Dev2 {
+
+        display: none;
+        border-radius: 360px;
+        align-items: center;
+        margin: auto;
+
+        ${media.lessThan("medium")`
+            display:flex ;
+            width: 300px;
+            height: 300px;
+        `}
+    }
+
 
 
     .paragraph {
         font-size: ${FontAndSpacing.fontSize.xl};
+
+        ${media.lessThan("medium")`
+            text-align: center;
+
+            font-size: ${FontAndSpacing.fontSize.lg};
+        `}
     }
 `
 
@@ -59,14 +112,11 @@ const pulseAnimation = keyframes`
 export const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
 `;
 
 export const ProjectContainer = styled.div`
 
-    margin: ${FontAndSpacing.spacing["3xl"]};
+    margin: 0 ${FontAndSpacing.spacing["3xl"]};
     font-size: ${FontAndSpacing.fontSize.xl};
     text-align: center;
 
@@ -91,6 +141,8 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     margin: auto;
+
+    
 `
