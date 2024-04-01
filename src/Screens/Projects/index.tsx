@@ -18,6 +18,17 @@ const Projects: React.FC = () => {
                         <iframe src="https://vinidill.github.io/pizza/" className="IframeMobile" ></iframe>
                     </div>
                 </ContainerContent>
+                <ContainerContent>
+                    <div className="project-preview">
+                        <h3>Projeto: Pizzaria (Desktop)</h3>
+                        <iframe src="https://vinidill.github.io/pizza/" className="IframeDesktop" ></iframe>
+                    </div>
+
+                    <div className="project-preview">
+                        <h3>Projeto: Pizzaria (Mobile)</h3>
+                        <iframe src="https://vinidill.github.io/pizza/" className="IframeMobile" ></iframe>
+                    </div>
+                </ContainerContent>
 
             </section>
         </Container>
