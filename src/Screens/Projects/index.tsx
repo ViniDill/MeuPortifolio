@@ -1,12 +1,25 @@
 import React from "react";
-import { Container } from "./styles";
-
+import { Container, ContainerContent } from "./styles";
 
 const Projects: React.FC = () => {
     return (
         <Container>
-            <h1>Projetos</h1>
-            <h2>Para Teste</h2>
+                <section id="projects">
+                <h2>Meus Projetos</h2>
+
+                <ContainerContent>
+                    <div className="project-preview">
+                        <h3>Projeto: Pizzaria (Desktop)</h3>
+                        <iframe src="https://vinidill.github.io/pizza/" className="IframeDesktop" ></iframe>
+                    </div>
+
+                    <div className="project-preview">
+                        <h3>Projeto: Pizzaria (Mobile)</h3>
+                        <iframe src="https://vinidill.github.io/pizza/" className="IframeMobile" ></iframe>
+                    </div>
+                </ContainerContent>
+
+            </section>
         </Container>
     )
 }

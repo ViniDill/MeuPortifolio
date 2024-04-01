@@ -11,7 +11,7 @@ function Routes() {
         <Route path="/" element={<Hello />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="rota-teste" element={<RotaTeste />} />
-        <Route path="rota-teste" element={<Projects />} />
+        <Route path="projects" element={<Projects />} />
       </Rota>
     </BrowserRouter>
   );
