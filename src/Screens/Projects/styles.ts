@@ -7,7 +7,10 @@ export const Container = styled.div`
 export const ContainerContent = styled.div`
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 
     padding: 0 30px;
 
@@ -53,3 +56,20 @@ export const ContainerContent = styled.div`
     `}
 
 `;
+
+export const ProjectContainer = styled.div`
+    width: 100%;
+    margin: 20px;
+
+    ${media.lessThan("medium")`
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    `}
+`
+
+export const HeaderContainer = styled.div`
+    width: 100%;
+`

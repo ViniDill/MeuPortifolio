@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ContainerContent } from "./styles";
+import { Container, ContainerContent, ProjectContainer, HeaderContainer } from "./styles";
 
 const Projects: React.FC = () => {
     return (
@@ -8,26 +8,34 @@ const Projects: React.FC = () => {
                 <h2>Meus Projetos</h2>
 
                 <ContainerContent>
-                    <div className="project-preview">
-                        <h3 className="Desktop">Projeto: Pizzaria (Desktop)</h3>
+                    <ProjectContainer className="project-preview">
+                        <HeaderContainer>
+                            <h3 className="Desktop">Projeto: Pizzaria (Desktop)</h3>
+                        </HeaderContainer>
                         <iframe src="https://vinidill.github.io/pizza/" className="IframeDesktop" ></iframe>
-                    </div>
+                    </ProjectContainer>
 
-                    <div className="project-preview">
-                        <h3>Projeto: Pizzaria (Mobile)</h3>
+                    <ProjectContainer className="project-preview">
+                        <HeaderContainer>
+                            <h3>Projeto: Pizzaria (Mobile)</h3>
+                        </HeaderContainer>
                         <iframe src="https://vinidill.github.io/pizza/" className="IframeMobile" ></iframe>
-                    </div>
+                    </ProjectContainer>
                 </ContainerContent>
                 <ContainerContent>
-                    <div className="project-preview">
-                        <h3 className="Desktop">Projeto: Formulário (Desktop)</h3>
+                    <ProjectContainer className="project-preview">
+                        <HeaderContainer>
+                            <h3 className="Desktop">Projeto: Formulário (Desktop)</h3>
+                        </HeaderContainer>
                         <iframe src="https://vinidill.github.io/Formulario/" className="IframeDesktop" ></iframe>
-                    </div>
+                    </ProjectContainer>
 
-                    <div className="project-preview">
-                        <h3>Projeto: Formulário (Mobile)</h3>
+                    <ProjectContainer className="project-preview">
+                        <HeaderContainer>
+                            <h3>Projeto: Formulário (Mobile)</h3>
+                        </HeaderContainer>
                         <iframe src="https://vinidill.github.io/Formulario/" className="IframeMobile" ></iframe>
-                    </div>
+                    </ProjectContainer>
                 </ContainerContent>
 
             </section>
