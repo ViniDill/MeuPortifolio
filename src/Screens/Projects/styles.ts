@@ -1,7 +1,17 @@
 import styled from "styled-components";
 import media from "styled-media-query";
 
+import FontAndSpacing from "../../theme/FontAndSpacing";
+
 export const Container = styled.div`
+
+    h2 {
+        font-size: ${FontAndSpacing.fontSize["2xl"]};
+    }
+
+    h3 {
+        font-size: ${FontAndSpacing.fontSize["xl"]};
+    }
 `;
 
 export const ContainerContent = styled.div`

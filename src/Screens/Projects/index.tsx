@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
     return (
         <Container>
                 <section id="projects">
-                <h2>Meus Projetos</h2>
+                <h2>Meus Projetos:</h2>
 
                 <ContainerContent>
                     <ProjectContainer className="project-preview">

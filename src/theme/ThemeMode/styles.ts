@@ -13,6 +13,10 @@ export const HeaderContainer = styled.div`
     align-items: center;
     justify-content: right;
     width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
 
     ${media.lessThan("small")`
         justify-content: center;
