@@ -11,6 +11,15 @@ export const Container = styled.div`
 
     h3 {
         font-size: ${FontAndSpacing.fontSize["xl"]};
+        cursor: pointer;
+
+        &:hover {
+            color: #552583;
+        }
+
+        &:active {
+            color: #FDB927;
+        }
     }
 `;
 
@@ -28,7 +37,7 @@ export const ContainerContent = styled.div`
         width: 950px;
         height: 600px;
 
-    border-radius: 10px;
+    border-radius: 20px;
     }
 
     .IframeMobile {
