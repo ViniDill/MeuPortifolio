@@ -9,14 +9,20 @@ export const ContainerContent = styled.div`
     display: flex;
     justify-content: space-evenly;
 
+    padding: 0 30px;
+
     .IframeDesktop {
         width: 950px;
         height: 600px;
+
+    border-radius: 10px;
     }
 
     .IframeMobile {
         width: 320px;
         height: 568px;
+
+        border-radius: 10px;
     }
 
     ${media.lessThan("large")`
@@ -25,7 +31,6 @@ export const ContainerContent = styled.div`
         justify-content: center;
 
         align-items: center;
-
         .IframeDesktop {
             width: 800px;
             height: 600px;
@@ -33,6 +38,11 @@ export const ContainerContent = styled.div`
     `}
 
     ${media.lessThan("medium")`
+
+        .Desktop {
+            display: none;
+        }
+
 
         .IframeDesktop {
            display: none;

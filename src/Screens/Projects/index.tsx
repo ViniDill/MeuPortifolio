@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
 
                 <ContainerContent>
                     <div className="project-preview">
-                        <h3>Projeto: Pizzaria (Desktop)</h3>
+                        <h3 className="Desktop">Projeto: Pizzaria (Desktop)</h3>
                         <iframe src="https://vinidill.github.io/pizza/" className="IframeDesktop" ></iframe>
                     </div>
 
@@ -20,13 +20,13 @@ const Projects: React.FC = () => {
                 </ContainerContent>
                 <ContainerContent>
                     <div className="project-preview">
-                        <h3>Projeto: Pizzaria (Desktop)</h3>
-                        <iframe src="https://vinidill.github.io/pizza/" className="IframeDesktop" ></iframe>
+                        <h3 className="Desktop">Projeto: Formulário (Desktop)</h3>
+                        <iframe src="https://vinidill.github.io/Formulario/" className="IframeDesktop" ></iframe>
                     </div>
 
                     <div className="project-preview">
-                        <h3>Projeto: Pizzaria (Mobile)</h3>
-                        <iframe src="https://vinidill.github.io/pizza/" className="IframeMobile" ></iframe>
+                        <h3>Projeto: Formulário (Mobile)</h3>
+                        <iframe src="https://vinidill.github.io/Formulario/" className="IframeMobile" ></iframe>
                     </div>
                 </ContainerContent>
 
