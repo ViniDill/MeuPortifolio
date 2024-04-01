@@ -20,6 +20,7 @@ export const HeaderContainer = styled.div`
 
     ${media.lessThan("small")`
         justify-content: center;
+        width: 100%;
         `}
 `
 
