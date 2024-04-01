@@ -15,6 +15,7 @@ const Hello: React.FC = () => {
 
     const handleNavigateToProjects = () => {
         navigate("/projects");
+        window.scrollTo(0, 0);
     };
 
     return (
