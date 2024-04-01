@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
 import { 
     Container, 
@@ -10,6 +11,12 @@ import {
  } from "./styles";
 
 const Hello: React.FC = () => {
+    const navigate = useNavigate();
+
+    const handleNavigateToProjects = () => {
+        navigate("/projects");
+    };
+
     return (
         <Container>
             <ContentContainer>
@@ -27,7 +34,7 @@ const Hello: React.FC = () => {
                     </ImageContainer>
                 </HeaderContainer>
                 <ProjectContainer >
-                    <h3 onClick={() => window.location.href = "/projects"}>Acesse meus Projetos aqui!</h3>
+                    <h3 onClick={handleNavigateToProjects}>Acesse meus Projetos aqui!</h3>
                     <PanToolAltIcon className="toolIcon" style={{ fontSize: 40 }} />
                 </ProjectContainer>
             </ContentContainer>
