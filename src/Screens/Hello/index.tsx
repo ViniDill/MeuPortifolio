@@ -25,9 +25,9 @@ const Hello: React.FC = () => {
                     <TextContainer>
                         <h1>Olá, eu sou Vinícius,</h1>
                         <img src="./Images/dev.jpg" alt="Dev" className="Dev2" />
-                        <h2>Desenvolvedor Web Front-End</h2>
-                        <p className="paragraph" >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis saepe tenetur impedit atque enim blanditiis officia unde, praesentium molestias amet consequuntur ut neque at libero cupiditate omnis provident?
+                        <h2>Desenvolvedor Web</h2>
+                        <p className="paragraph">
+                            Quer destacar sua marca e atrair mais clientes? Um site profissional é a sua vitrine digital, essencial para conquistar presença online e alcançar futuros. Transforme ideias em realidade e posicione-se no mercado de forma estratégica e inovadora. Vamos criar juntos sua plataforma ideal!
                         </p>
                     </TextContainer>
                     <ImageContainer>
@@ -35,7 +35,7 @@ const Hello: React.FC = () => {
                     </ImageContainer>
                 </HeaderContainer>
                 <ProjectContainer >
-                    <h3 onClick={handleNavigateToProjects}>Acesse meus Projetos aqui!</h3>
+                    <h3 onClick={handleNavigateToProjects}>Acesse templates prontos!</h3>
                     <PanToolAltIcon className="toolIcon" style={{ fontSize: 40 }} />
                 </ProjectContainer>
             </ContentContainer>

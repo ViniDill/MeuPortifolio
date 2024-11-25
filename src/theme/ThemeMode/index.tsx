@@ -48,19 +48,29 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
   };
 
+  const headerBackgroundColor = mode === 'light' ? '#f5f5f5' : '#1c1c1c';
+
   return (
     <ThemeProvider theme={mode === 'light' ? lightTheme : darkTheme}>
       <CssBaseline />
       <Container>
-          <HeaderContainer style={{ backgroundColor: mode === 'light' ? '#dddcdc' : '#282828' }}>
-            <IconContainer>
-              <GitHubIcon className="GitHub" style={{ fontSize: 40 }} onClick={() => window.location.href = "https://github.com/ViniDill"} />
-              <LinkedInIcon className="LinkedIn" style={{ fontSize: 40 }} onClick={() => window.location.href = "https://www.linkedin.com/in/vinidill/"} />
-              <IconButton color="inherit" onClick={toggleColorMode}>
-                {mode === 'light' ? <WbSunnyIcon style={{ fontSize: 40 }} /> : <NightsStayIcon style={{ fontSize: 40 }} />}
-              </IconButton>
-            </IconContainer>
-          </HeaderContainer>
+        <HeaderContainer style={{ backgroundColor: headerBackgroundColor }}>
+          <IconContainer>
+            <GitHubIcon
+              className="GitHub"
+              style={{ fontSize: 40 }}
+              onClick={() => (window.location.href = "https://github.com/ViniDill")}
+            />
+            <LinkedInIcon
+              className="LinkedIn"
+              style={{ fontSize: 40 }}
+              onClick={() => (window.location.href = "https://www.linkedin.com/in/vinidill/")}
+            />
+            <IconButton color="inherit" onClick={toggleColorMode}>
+              {mode === 'light' ? <WbSunnyIcon style={{ fontSize: 40 }} /> : <NightsStayIcon style={{ fontSize: 40 }} />}
+            </IconButton>
+          </IconContainer>
+        </HeaderContainer>
         {children}
       </Container>
     </ThemeProvider>

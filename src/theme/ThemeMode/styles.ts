@@ -3,8 +3,6 @@ import FontAndSpacing from "../FontAndSpacing";
 import media from "styled-media-query";
 
 export const Container = styled.div`
-    
-    padding: ${FontAndSpacing.spacing["2xl"]};
 `
 
 export const HeaderContainer = styled.div`
@@ -15,7 +13,7 @@ export const HeaderContainer = styled.div`
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    padding: ${FontAndSpacing.spacing.s} ${FontAndSpacing.spacing.xl};
 
 
     ${media.lessThan("small")`

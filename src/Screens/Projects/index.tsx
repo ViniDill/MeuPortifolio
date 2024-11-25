@@ -32,16 +32,16 @@ const Projects: React.FC = () => {
                 <ContainerContent>
                     <ProjectContainer className="project-preview">
                         <HeaderContainer>
-                            <h3 className="Desktop" onClick={() => handleProjectClick("https://vinidill.github.io/Formulario/")}>Projeto: Formulário (Desktop)</h3>
+                            <h3 className="Desktop" onClick={() => handleProjectClick("https://otaldoxis.netlify.app/")}>Projeto: O tal do Xis (Desktop)</h3>
                         </HeaderContainer>
-                        <iframe src="https://vinidill.github.io/Formulario/" className="IframeDesktop" ></iframe>
+                        <iframe src="https://otaldoxis.netlify.app/" className="IframeDesktop" ></iframe>
                     </ProjectContainer>
 
                     <ProjectContainer className="project-preview">
                         <HeaderContainer>
-                            <h3 onClick={() => handleProjectClick("https://vinidill.github.io/Formulario/")}>Projeto: Formulário (Mobile)</h3>
+                            <h3 onClick={() => handleProjectClick("https://otaldoxis.netlify.app/")}>Projeto: O tal do Xis (Mobile)</h3>
                         </HeaderContainer>
-                        <iframe src="https://vinidill.github.io/Formulario/" className="IframeMobile" ></iframe>
+                        <iframe src="https://otaldoxis.netlify.app/" className="IframeMobile" ></iframe>
                     </ProjectContainer>
                 </ContainerContent>
 

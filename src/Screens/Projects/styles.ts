@@ -4,6 +4,7 @@ import media from "styled-media-query";
 import FontAndSpacing from "../../theme/FontAndSpacing";
 
 export const Container = styled.div`
+    padding: 0 ${FontAndSpacing.spacing.xl};
 
     h2 {
         font-size: ${FontAndSpacing.fontSize["2xl"]};
