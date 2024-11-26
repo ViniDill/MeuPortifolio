@@ -6,8 +6,9 @@ import IconButton from '@mui/material/IconButton';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import { Container, HeaderContainer, IconContainer } from "./styles";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -56,17 +57,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Container>
         <HeaderContainer style={{ backgroundColor: headerBackgroundColor }}>
           <IconContainer>
-            <GitHubIcon
-              className="GitHub"
-              style={{ fontSize: 40 }}
-              onClick={() => (window.location.href = "https://github.com/ViniDill")}
-            />
-            <LinkedInIcon
-              className="LinkedIn"
-              style={{ fontSize: 40 }}
-              onClick={() => (window.location.href = "https://www.linkedin.com/in/vinidill/")}
-            />
-            <IconButton color="inherit" onClick={toggleColorMode}>
+          <PhoneIcon
+            className="Phone"
+            style={{ fontSize: 40 }}
+            onClick={() => window.open("tel:+54996217004", "_blank")}
+          />
+          <WhatsAppIcon
+            className="WhatsApp"
+            style={{ fontSize: 40 }}
+            onClick={() => window.open("https://wa.me/54996217004", "_blank")}
+          />
+          <EmailIcon
+            className="Email"
+            style={{ fontSize: 40 }}
+            onClick={() => window.open("mailto:vinidevsistemas@gmail.com", "_blank")}
+          />
+            <IconButton color="inherit" onClick={toggleColorMode} className="IconButton">
               {mode === 'light' ? <WbSunnyIcon style={{ fontSize: 40 }} /> : <NightsStayIcon style={{ fontSize: 40 }} />}
             </IconButton>
           </IconContainer>

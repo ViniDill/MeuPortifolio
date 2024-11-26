@@ -27,11 +27,15 @@ export const IconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 250px;
-    margin-left: 20px;
+    width: 350px;
+    margin-right: 20px;
     cursor: pointer;
 
-    .LinkedIn, .GitHub  {
+    .IconButton {
+    margin-left: 50px;
+    }
+
+    .WhatsApp, .Phone, .Email  {
         
         &:hover {
             background-color: rgba( 127.5, 127.5, 127.5, 0.2 );
