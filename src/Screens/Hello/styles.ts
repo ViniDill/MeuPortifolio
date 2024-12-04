@@ -20,7 +20,6 @@ export const ImageContainer = styled.div`
 
         width: 500px;
         height: 500px;
-        border-radius: 360px;
 
         ${media.lessThan("huge")`
         max-width: 500px;

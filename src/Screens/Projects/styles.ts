@@ -24,6 +24,27 @@ export const Container = styled.div`
     }
 `;
 
+export const ReturnContainer = styled.div`
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+    cursor: pointer;
+    .Arrow {
+        
+        &:hover {
+            background-color: rgba( 127.5, 127.5, 127.5, 0.2 );
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px rgba( 127.5, 127.5, 127.5, 0.2 );
+        }
+        
+        &:active {
+            background-color: rgba( 180, 180, 180, 0.2 );
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px rgba( 127.5, 127.5, 127.5, 0.2 );
+        }    
+    }
+`
+
 export const ContainerContent = styled.div`
 
     display: flex;

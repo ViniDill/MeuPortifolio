@@ -60,17 +60,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <PhoneIcon
             className="Phone"
             style={{ fontSize: 40 }}
-            onClick={() => window.open("tel:+54996217004", "_blank")}
+            onClick={() => window.open("tel:+54999669212", "_blank")}
           />
           <WhatsAppIcon
             className="WhatsApp"
             style={{ fontSize: 40 }}
-            onClick={() => window.open("https://wa.me/54996217004", "_blank")}
+            onClick={() => window.open("https://wa.me/54999669212", "_blank")}
           />
           <EmailIcon
             className="Email"
             style={{ fontSize: 40 }}
-            onClick={() => window.open("mailto:vinidevsistemas@gmail.com", "_blank")}
+            onClick={() => window.open("mailto:contato@softcodesistemas.com.br", "_blank")}
           />
             <IconButton color="inherit" onClick={toggleColorMode} className="IconButton">
               {mode === 'light' ? <WbSunnyIcon style={{ fontSize: 40 }} /> : <NightsStayIcon style={{ fontSize: 40 }} />}

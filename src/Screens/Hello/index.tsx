@@ -23,9 +23,9 @@ const Hello: React.FC = () => {
             <ContentContainer>
                 <HeaderContainer>
                     <TextContainer>
-                        <h1>Olá, eu sou Vinícius,</h1>
-                        <img src="./Images/dev.jpg" alt="Dev" className="Dev2" />
-                        <h2>Desenvolvedor Web</h2>
+                        <h1>Olá, somos a SoftCode Sistemas,</h1>
+                        <img src="./Images/SCS.png" alt="Dev" className="Dev2" />
+                        <h2>Iremos te ajudar a desenvolver seu site</h2>
                         <p className="paragraph">
                             Quer destacar sua marca e atrair mais clientes? Um site profissional é a sua vitrine digital, essencial para conquistar presença online e alcançar futuros. Transforme ideias em realidade e posicione-se no mercado de forma estratégica e inovadora. Vamos criar juntos sua plataforma ideal!
                         </p>
